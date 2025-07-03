@@ -321,7 +321,7 @@ color:#dfbe05;
   --white: #2b7344;
   color:#00d95b;
   background-image: linear-gradient(var(--yellow) 0% var(--progress), var(--white) var(--progress) 100%);
-  border: 4px solid #4a08ac;
+  border: 4px solid #1c4030;
   border-radius: 0.5em;
   display: inline-block;
   padding: 0.3em;
