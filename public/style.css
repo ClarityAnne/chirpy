@@ -296,6 +296,8 @@ main ul {
 }
 main ul li:before {
 	content: "♫";
+
+	text-shadow: 1px 1px 0 #1c4030, -1px 1px 0 #1c4030, -1px -1px 0 #1c4030, 1px -1px 0 #1c4030;
 	margin-right: 0.3rem;
 	font-size: 1.4rem;
   line-height:1rem;
