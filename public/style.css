@@ -30,8 +30,7 @@ background-size: 4px 100%;
 
 #wrapper {
   display: flex;
-  flex-direction: column;
-  min-height: 100vh;}
+  flex-direction: column;}
  /* 
 WELCOME
 */ 
