@@ -300,6 +300,7 @@ main ul li:before {
 	text-shadow: 1px 1px 0 #1c4030, -1px 1px 0 #1c4030, -1px -1px 0 #1c4030, 1px -1px 0 #1c4030;
 	margin-right: 0.3rem;
 	font-size: 1.4rem;
+  font-weight:bolder;
   line-height:1rem;
   font-family: sans-serif;
 color:#dfbe05
