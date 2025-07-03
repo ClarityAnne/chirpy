@@ -15,7 +15,7 @@
 
   <div id="wrapper">
 <!-- this button appears near the bottom of the screen to take the visitor back to the top, when viewing the site on desktop-sized screens -->
-<header>
+<header id="top">
   <h1>MIDI FOREST</h1>
   <button class="toggler" id="toggler">&#9776;</button>
 </header>
@@ -116,19 +116,19 @@
 
 
 
-
-
-</main>
-
-<footer>
-  <p>Textual contents of this site, unless obvious or otherwise noted, are licensed under a <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0 license</a>.</p>
-</footer>          <a href="#wrapper" class="topup">
+          <a href="#top" class="topup">
     <span>Back to top</span>
     <!-- aria-hidden="true" to hide the icon from screen readers -->
     <svg width="32" height="32" viewBox=" 0 0 24 24" aria-hidden="true">
       <path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
     </svg>
-  </a></div>
+  </a>
+
+</main>
+
+<footer>
+  <p>Textual contents of this site, unless obvious or otherwise noted, are licensed under a <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0 license</a>.</p>
+</footer></div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/combine/npm/tone@14.7.58,npm/@magenta/music@1.23.1/es6/core.js,npm/focus-visible@5,npm/html-midi-player@1.5.0"></script>
