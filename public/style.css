@@ -295,7 +295,7 @@ main ul {
 	list-style-type: none;
 }
 main ul li:before {
-	content: "❧";
+	content: "♫";
 	margin-right: 0.3rem;
 	font-size: 1.4rem;
   line-height:1rem;
