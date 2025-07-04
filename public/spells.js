@@ -163,7 +163,7 @@ document.documentElement.scrollTop = 0;
         'OneStop.MID',
         'Passport.MID'
       ];
-      const basePath = '/tunes/highlights/';
+      const basePath = 'https://midiforest.neocities.org/tunes/highlights/';
 
       const container   = document.getElementById('midicontainer');
       const titleElem   = container.querySelector('h4');
