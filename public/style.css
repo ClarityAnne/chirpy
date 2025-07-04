@@ -102,6 +102,7 @@ HEADER H1 {font-size:5rem;text-transform:uppercase;}
   margin-right:20%;
   margin-bottom: 0;
   padding:.5em;
+  padding-bottom:0;
   background: #00d95b;
   color:#000;
   border: 2px solid #000;
@@ -121,7 +122,7 @@ midi-player::part(play-button) {
   color: #353;
   border: 2px solid #353;
   background-color: #00984a;
-  border-radius: 20px;
+  border-radius: 0px;
   transition: all 0.2s;
   content: 'hello';
 }
