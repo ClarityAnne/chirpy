@@ -152,32 +152,26 @@ document.documentElement.scrollTop = 0;
 
 
 
-               
-   
-    document.addEventListener('DOMContentLoaded', () => {
-      const tunes = [
-        'Canyon.MID',
-        'Town.MID',
-        'Trains.MID',
-        'Daisy.MID',
-        'Flourish.MID',
-        'OneStop.MID',
-        'Passport.MID'
-      ];
-      const basePath = 'https://midiforest.neocities.org/tunes/highlights/';
-      const container = document.getElementById('midicontainer');
-      const titleElem = container.querySelector('h4');
-      const player = container.querySelector('midi-player');
-      const btn = document.getElementById('randomMidi');
+ 
+  const tunes = [
+    'Canyon.MID',
+    'Town.MID',
+    'Trains.MID',
+    'Daisy.MID',
+    'Flourish.MID',
+    'OneStop.MID',
+    'Passport.MID'
+  ];
 
-      btn.addEventListener('click', () => {
-        const filename = tunes[Math.floor(Math.random() * tunes.length)];
-        const fullUrl  = basePath + filename;
+  const player = document.querySelector('midi-player');
+  const title  = document.querySelector('#midicontainer h4');
+  const btn    = document.getElementById('next');
+  const base   = '/tunes/highlights/';
 
-        titleElem.textContent = filename;
-
-        player.src = fullUrl;             
-        if (typeof player.stop === 'function') player.stop();
-        if (typeof player.play === 'function') player.play();
-      });
-    });
+  btn.addEventListener('click', () => {
+    const file = tunes[Math.floor(Math.random() * tunes.length)];
+    title.textContent = file;
+    player.src = base + file;    
+    if (player.stop) player.stop();
+    player.play();
+  });
