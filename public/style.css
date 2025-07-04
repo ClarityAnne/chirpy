@@ -95,7 +95,7 @@ HEADER STYLES
 */
 HEADER H1 {font-size:5rem;text-transform:uppercase;}
 
-
+#midicontainer h4 {margin-left:.5em}
 
 #midicontainer {  display: block;
   width: inherit;
