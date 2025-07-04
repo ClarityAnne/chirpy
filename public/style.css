@@ -308,7 +308,7 @@ color:#dfbe05;
 @keyframes progress {
   0% {
     --progress: 0%;
-    --angle: 0deg;
+    --angle: 180deg;
   }
   
   2% {
