@@ -372,6 +372,11 @@ color:#dfbe05;
 
 main ul, main ol {width:100%;margin: auto;}
 main ul {
+  background-color:#00984a;
+  padding:.3rem;
+  width:60%;
+  margin:auto;
+  border: 8px solid #00d95b;
 	list-style-type: none;
 }
 main ul li:before {
