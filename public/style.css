@@ -106,7 +106,6 @@ HEADER H1 {font-size:5rem;text-transform:uppercase;}
   color:#000;
   border: 2px solid #000;
   border-radius: 10px;}
-/* Custom player style */
 midi-player {
   display: block;
   width: inherit;
