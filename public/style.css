@@ -373,11 +373,13 @@ main ul, main ol {margin: auto; display:block;width:100%}
 main ul {
   padding:.3rem;
   margin:auto;
-  border-left: .8rem solid #00984a;
+  border-left: .8rem solid #00d95b;
 	list-style-type: none;
 }
 main ul li:before {
 	content: "♫.";
+
+  border-left: .8rem solid #2b7344;
 
 	text-shadow: 1px 1px 0 #1c4030, -1px 1px 0 #1c4030, -1px -1px 0 #1c4030, 1px -1px 0 #1c4030;
 	margin-right: 0.3rem;
