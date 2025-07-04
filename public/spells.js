@@ -146,9 +146,15 @@ document.documentElement.scrollTop = 0;
                //i guess if it works, it's not stupid
 
 
+
+
+
+
+
+
+
     document.addEventListener('DOMContentLoaded', () => {
-  
-      const highlights = [
+      const tunes = [
         'Canyon.MID',
         'Town.MID',
         'Trains.MID',
@@ -157,34 +163,24 @@ document.documentElement.scrollTop = 0;
         'OneStop.MID',
         'Passport.MID'
       ];
-      const basePath = '/tunes/highlights/';  
-      const container = document.getElementById('midicontainer');
-      const titleElem = container.querySelector('h4');
-      const btn = document.getElementById('randomMidi');
+      const basePath = '/tunes/highlights/';
+
+      const container   = document.getElementById('midicontainer');
+      const titleElem   = container.querySelector('h4');
+      const player      = container.querySelector('midi-player');
+      const btn         = document.getElementById('randomMidi');
 
       btn.addEventListener('click', async () => {
-    
-        const filename = highlights[Math.floor(Math.random() * highlights.length)];
-        const fullSrc  = basePath + filename;
+      
+        const filename = tunes[Math.floor(Math.random() * tunes.length)];
+        const url      = basePath + filename;
 
-   
         titleElem.textContent = filename;
 
-        const oldPlayer = container.querySelector('midi-player');
-        if (oldPlayer) oldPlayer.remove();
+        const noteSeq = await core.urlToNoteSequence(url);
 
-        const newPlayer = document.createElement('midi-player');
-        newPlayer.setAttribute('src', fullSrc);
-        newPlayer.setAttribute('sound-font', '');
-        newPlayer.setAttribute('visualizer', '#myPianoRollVisualizer');
+        player.noteSequence = noteSeq;
 
-        container.insertBefore(newPlayer, titleElem.nextSibling);
-
-        if (window.customElements && customElements.whenDefined) {
-          await customElements.whenDefined('midi-player');
-        }
-        if (typeof newPlayer.play === 'function') {
-          newPlayer.play();
-        }
+        player.play();
       });
     });
