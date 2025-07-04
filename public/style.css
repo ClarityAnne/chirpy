@@ -101,7 +101,6 @@ HEADER H1 {font-size:5rem;text-transform:uppercase;}
 #midicontainer {  display: block;
   width: inherit;
   margin-right:20%;
-  margin-bottom: 0;
   padding: .5em;
   padding-bottom:0;
   background: #00d95b;
