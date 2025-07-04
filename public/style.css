@@ -113,6 +113,7 @@ midi-player {
   margin: 0px;
   margin-bottom: 0;
 }
+midi-player {margin:auto 0;}
 midi-player::part(control-panel) {
   background: #00d95b;
   color:#000;
@@ -124,7 +125,7 @@ midi-player::part(play-button) {
   background-color: #00984a;
   border-radius: 0px;
   transition: all 0.2s;
-  content: 'hello';
+  content: 'play';
 }
 midi-player::part(play-button):hover {
   background-color: #dfbe05;
