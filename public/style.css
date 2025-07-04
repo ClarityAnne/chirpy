@@ -199,7 +199,12 @@ h3, h4 {
 
   margin: 1em auto .5em;
 }
-h4 {font-size:larger; text-align:left;}
+h3, h4 {	text-shadow: 1px 1px 0 #1c4030, -1px 1px 0 #1c4030, -1px -1px 0 #1c4030, 1px -1px 0 #1c4030;
+color:#dfbe05; font-size:larger;  text-align:left;}
+
+
+
+
 
 h1 {
   width: 100%;
