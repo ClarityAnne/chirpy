@@ -207,7 +207,7 @@ h1 {
 color:#30e403;
 	text-shadow: 1px 1px 0 #1c4030, -1px 1px 0 #1c4030, -1px -1px 0 #1c4030, 1px -1px 0 #1c4030;
 }
-
+main h1 {margin:0;}
 h2 {
   margin: .5em auto .4em;
   max-width: 100%;
