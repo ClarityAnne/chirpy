@@ -213,7 +213,7 @@ h2 {
   max-width: 100%;
   display: block;
   position: relative;
-  font-size: 4em;
+  font-size: 5em;
 
 color:#00d95b;
 text-shadow: 1px 1px 0 #1c4030, -1px 1px 0 #1c4030, -1px -1px 0 #1c4030, 1px -1px 0 #1c4030;
@@ -259,7 +259,7 @@ h3::before {
   z-index: -1;
 } */
 header h1 {	font-size:4em;}
-main h1 { 	font-size:4em;
+main h1 { 	font-size:5em;
   margin: 0 auto; padding-bottom:.1em; 	max-width: 100%; }
 
 p {text-align:justify; padding:0.2rem 0; line-height:1.1;}
