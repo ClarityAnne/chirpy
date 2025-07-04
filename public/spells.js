@@ -154,7 +154,7 @@ document.documentElement.scrollTop = 0;
 
 
                  document.addEventListener('DOMContentLoaded', () => {
-      // 1. Y
+
       const tuning = [
         'canyon.mid', 'Canyon.MID', 'Town.MID', 'Trains.MID', 'Daisy.MID', 'Flourish.MID', 'OneStop.MID', 'Passport.MID',
       ];
