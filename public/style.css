@@ -117,7 +117,9 @@ midi-player {margin:auto 0;}
 midi-player::part(control-panel) {
   background: #00d95b;
   color:#000;
-  border-radius: 10px;
+  margin:0;
+  padding:0;f
+  border-radius: 0px;
 }
 midi-player::part(play-button) {
   color: #353;
