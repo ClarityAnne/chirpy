@@ -195,7 +195,7 @@ h3, h4 {
   line-height:70%;
   font-family: "VT323", monospace;
 
-  margin: 1em auto .5em;
+  margin: .5em auto .3em;
 }
 h3, h4 {	text-shadow: 1px 1px 0 #1c4030, -1px 1px 0 #1c4030, -1px -1px 0 #1c4030, 1px -1px 0 #1c4030;
 color:#dfbe05; text-align:left;}
