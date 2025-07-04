@@ -371,11 +371,10 @@ color:#dfbe05;
 
 main ul, main ol {margin: auto; display:block;width:100%}
 main ul {
-  background-color:#00984a;
   padding:.3rem;
   border-radius:10px;
   margin:auto;
-  border: 8px solid #00d95b;
+  border-left: .3rem solid #00d95b;
 	list-style-type: none;
 }
 main ul li:before {
