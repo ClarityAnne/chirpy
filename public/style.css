@@ -59,7 +59,7 @@ WELCOME
 LAYOUT CONTAINERS
 */
 header, nav, main, footer {
-  margin: 0 10%;
+  margin: 0 0%;
 }
 footer {padding:.2rem}
 main { padding: 2rem 2.4rem; 
