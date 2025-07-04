@@ -704,7 +704,7 @@ nav ul {
 
 }
 nav li {
-	float: center;
+	float: left;
   padding:.3rem;
   margin:.3rem;
   width:fit-content;
