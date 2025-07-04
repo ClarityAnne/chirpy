@@ -113,12 +113,12 @@ midi-player {
   margin: 0px;
   margin-bottom: 0;
 }
-midi-player {margin:auto 0;}
+midi-player {margin:auto 0; padding:0;}
 midi-player::part(control-panel) {
   background: #00d95b;
   color:#000;
   margin:0;
-  padding:0;f
+  padding:0;
   border-radius: 0px;
 }
 midi-player::part(play-button) {
