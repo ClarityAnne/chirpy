@@ -85,6 +85,7 @@ footer {
   text-align: center;
     font-family: "VT323", monospace;
   font-size:1.3rem;
+  padding: 0 1em;
   text-transform: uppercase;
   border-top: 4px solid #00d95b;
   background-color: #1c4030; 
