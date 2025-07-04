@@ -166,7 +166,7 @@ document.documentElement.scrollTop = 0;
   const player = document.querySelector('midi-player');
   const title  = document.querySelector('#midicontainer h4');
   const btn    = document.getElementById('next');
-  const base   = '/tunes/highlights/';
+  const base   = 'https://midiforest.neocities.org/tunes/highlights/';
 
   btn.addEventListener('click', () => {
     const file = tunes[Math.floor(Math.random() * tunes.length)];
