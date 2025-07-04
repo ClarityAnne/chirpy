@@ -213,7 +213,7 @@ h2 {
   max-width: 100%;
   display: block;
   position: relative;
-  font-size: 3em;
+  font-size: 4em;
 
 color:#00d95b;
 text-shadow: 1px 1px 0 #1c4030, -1px 1px 0 #1c4030, -1px -1px 0 #1c4030, 1px -1px 0 #1c4030;
@@ -241,7 +241,7 @@ h3 {
   max-width: 100%;
   display: block;
   position: relative;
-  font-size: 2rem;
+  font-size: 3em;
   z-index: 2;
 }
 /*
