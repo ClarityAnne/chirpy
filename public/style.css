@@ -373,7 +373,7 @@ main ul, main ol {margin: auto; display:block;width:100%}
 main ul {
   padding:.3rem;
   margin:auto;
-  border-left: .8rem solid #00d95b;
+  border-left: .8rem solid #00984a;
 	list-style-type: none;
 }
 main ul li:before {
