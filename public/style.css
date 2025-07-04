@@ -197,18 +197,17 @@ h3, h4 {
   line-height:70%;
   font-family: "VT323", monospace;
 
+  margin: 1em auto .5em;
 }
 h4 {font-size:larger; text-align:left;}
 
 h1 {
   width: 100%;
-  margin: 0 auto;
 
 color:#30e403;
 	text-shadow: 1px 1px 0 #1c4030, -1px 1px 0 #1c4030, -1px -1px 0 #1c4030, 1px -1px 0 #1c4030;
 }
 h2 {
-  margin: .5em auto .4em;
   max-width: 100%;
   display: block;
   position: relative;
