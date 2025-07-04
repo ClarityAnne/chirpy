@@ -150,30 +150,39 @@ document.documentElement.scrollTop = 0;
 
 
 
-
-
-
-                 document.addEventListener('DOMContentLoaded', () => {
-
-      const tuning = [
-        'canyon.mid', 'Canyon.MID', 'Town.MID', 'Trains.MID', 'Daisy.MID', 'Flourish.MID', 'OneStop.MID', 'Passport.MID',
+    document.addEventListener('DOMContentLoaded', () => {
+      const tunes = [
+        'Canyon.MID',
+        'Town.MID',
+        'Trains.MID',
+        'Daisy.MID',
+        'Flourish.MID',
+        'OneStop.MID',
+        'Passport.MID'
       ];
 
-      const basePath = '/tunes/highlights/';          
+      const basePath = '/tunes/highlights/';         
       const container = document.getElementById('midicontainer');
-      const titleElem = container.querySelector('h4'); 
+      const titleElem = container.querySelector('h4');
       const playerElem = container.querySelector('midi-player');
       const btn = document.getElementById('randomMidi');
 
       btn.addEventListener('click', () => {
+     
+        const filename = tunes[Math.floor(Math.random() * tunes.length)];
+        const newSrc = basePath + filename;
 
-        const i = Math.floor(Math.random() * tuning.length);
-        const filename = tuning[i];
-        const src = basePath + filename;
+        if (typeof playerElem.stop === 'function') {
+          playerElem.stop();
+        }
 
         titleElem.textContent = filename;
-        playerElem.setAttribute('src', src);
+        playerElem.setAttribute('src', newSrc);
 
-     playerElem.load();
+        setTimeout(() => {
+          if (typeof playerElem.play === 'function') {
+            playerElem.play();
+          }
+        }, 50);
       });
     });
