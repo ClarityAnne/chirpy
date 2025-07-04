@@ -165,7 +165,7 @@ document.documentElement.scrollTop = 0;
       btn.addEventListener('click', async () => {
     
         const filename = highlights[Math.floor(Math.random() * highlights.length)];
-        const fullSrc  = 'http://midiforest.neocities.org' + basePath + filename;
+        const fullSrc  = basePath + filename;
 
    
         titleElem.textContent = filename;
