@@ -96,7 +96,7 @@ HEADER STYLES
 */
 HEADER H1 {font-size:5rem;text-transform:uppercase;}
 
-#midicontainer h4 {margin-left:.5em; font-size:1.3rem; MARGIN-TOP:.5EM;}
+#midicontainer h4 {margin-left:.5em; MARGIN-TOP:.5EM;}
 
 #midicontainer {  display: block;
   width: inherit;
@@ -201,7 +201,7 @@ h3, h4 {	text-shadow: 1px 1px 0 #1c4030, -1px 1px 0 #1c4030, -1px -1px 0 #1c4030
 color:#dfbe05; font-size:larger;  text-align:left;}
 
 
-
+h4 {font-size: 1.8rem;}
 
 
 h1 {
