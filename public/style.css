@@ -370,7 +370,7 @@ color:#dfbe05;
 .oOo.oOo.oOo.oOo.oOo.oOo.oOo.oOo. 
 */ 
 
-main ul, main ol {margin: auto; width:100%}
+main ul, main ol {margin: auto; width:fit-content}
 main ul {
   background-color:#00984a;
   padding:.3rem;
