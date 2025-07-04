@@ -423,7 +423,10 @@ main li {
 em {font-style:normal;font-weight:bold;}
 img {width:100%; margin:.4rem auto;}
 
-.crown {float:inline-start}
+
+.lantern { display:inline-start;padding:0; margin: .3em; margin-left:0; margin-top:0; float:left; width:12%;}
+
+
 
 .mage { display:inline-end;padding:0; margin: .3em; margin-left:0; margin-top:0; float:right; width:20%;}
 
