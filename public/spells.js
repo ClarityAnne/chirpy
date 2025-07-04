@@ -146,11 +146,8 @@ document.documentElement.scrollTop = 0;
                //i guess if it works, it's not stupid
 
 
-
-
-
-
     document.addEventListener('DOMContentLoaded', () => {
+  
       const tunes = [
         'Canyon.MID',
         'Town.MID',
@@ -160,29 +157,34 @@ document.documentElement.scrollTop = 0;
         'OneStop.MID',
         'Passport.MID'
       ];
-
-      const basePath = '/tunes/highlights/';         
+      const basePath = '/tunes/highlights/';  
       const container = document.getElementById('midicontainer');
       const titleElem = container.querySelector('h4');
-      const playerElem = container.querySelector('midi-player');
       const btn = document.getElementById('randomMidi');
 
-      btn.addEventListener('click', () => {
-     
+      btn.addEventListener('click', async () => {
+    
         const filename = tunes[Math.floor(Math.random() * tunes.length)];
-        const newSrc = basePath + filename;
+        const fullSrc  = basePath + filename;
 
-        if (typeof playerElem.stop === 'function') {
-          playerElem.stop();
-        }
-
+   
         titleElem.textContent = filename;
-        playerElem.setAttribute('src', newSrc);
 
-        setTimeout(() => {
-          if (typeof playerElem.play === 'function') {
-            playerElem.play();
-          }
-        }, 50);
+        const oldPlayer = container.querySelector('midi-player');
+        if (oldPlayer) oldPlayer.remove();
+
+        const newPlayer = document.createElement('midi-player');
+        newPlayer.setAttribute('src', fullSrc);
+        newPlayer.setAttribute('sound-font', '');
+        newPlayer.setAttribute('visualizer', '#myPianoRollVisualizer');
+
+        container.insertBefore(newPlayer, titleElem.nextSibling);
+
+        if (window.customElements && customElements.whenDefined) {
+          await customElements.whenDefined('midi-player');
+        }
+        if (typeof newPlayer.play === 'function') {
+          newPlayer.play();
+        }
       });
     });
