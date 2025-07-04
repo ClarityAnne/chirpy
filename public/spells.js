@@ -148,7 +148,7 @@ document.documentElement.scrollTop = 0;
 
     document.addEventListener('DOMContentLoaded', () => {
   
-      const tunes = [
+      const highlights = [
         'Canyon.MID',
         'Town.MID',
         'Trains.MID',
@@ -164,7 +164,7 @@ document.documentElement.scrollTop = 0;
 
       btn.addEventListener('click', async () => {
     
-        const filename = tunes[Math.floor(Math.random() * tunes.length)];
+        const filename = highlights[Math.floor(Math.random() * highlights.length)];
         const fullSrc  = basePath + filename;
 
    
