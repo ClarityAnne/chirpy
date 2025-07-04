@@ -146,6 +146,7 @@ document.documentElement.scrollTop = 0;
                //i guess if it works, it's not stupid
 
 
+    document.addEventListener('DOMContentLoaded', () => {
   
       const highlights = [
         'Canyon.MID',
