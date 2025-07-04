@@ -203,10 +203,12 @@ h4 {font-size:larger; text-align:left;}
 
 h1 {
   width: 100%;
-
 color:#30e403;
 	text-shadow: 1px 1px 0 #1c4030, -1px 1px 0 #1c4030, -1px -1px 0 #1c4030, 1px -1px 0 #1c4030;
 }
+
+header h1{
+  margin: 0 auto;}
 h2 {
   max-width: 100%;
   display: block;
