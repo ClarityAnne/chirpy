@@ -146,3 +146,34 @@ document.documentElement.scrollTop = 0;
                //i guess if it works, it's not stupid
 
 
+
+
+
+
+
+
+
+                 document.addEventListener('DOMContentLoaded', () => {
+      // 1. Y
+      const tuning = [
+        'canyon.mid', 'Canyon.MID', 'Town.MID', 'Trains.MID', 'Daisy.MID', 'Flourish.MID', 'OneStop.MID', 'Passport.MID',
+      ];
+
+      const basePath = '/tunes/highlights/';          
+      const container = document.getElementById('midicontainer');
+      const titleElem = container.querySelector('h4'); 
+      const playerElem = container.querySelector('midi-player');
+      const btn = document.getElementById('randomMidi');
+
+      btn.addEventListener('click', () => {
+
+        const i = Math.floor(Math.random() * tuning.length);
+        const filename = tuning[i];
+        const src = basePath + filename;
+
+        titleElem.textContent = filename;
+        playerElem.setAttribute('src', src);
+
+     playerElem.load();
+      });
+    });
