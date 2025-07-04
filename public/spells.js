@@ -153,8 +153,9 @@ document.documentElement.scrollTop = 0;
 
 
                
+   
     document.addEventListener('DOMContentLoaded', () => {
-      const highlights = [
+      const tunes = [
         'Canyon.MID',
         'Town.MID',
         'Trains.MID',
@@ -164,22 +165,19 @@ document.documentElement.scrollTop = 0;
         'Passport.MID'
       ];
       const basePath = '/tunes/highlights/';
+      const container = document.getElementById('midicontainer');
+      const titleElem = container.querySelector('h4');
+      const player = container.querySelector('midi-player');
+      const btn = document.getElementById('randomMidi');
 
-      const container   = document.getElementById('midicontainer');
-      const titleElem   = container.querySelector('h4');
-      const player      = container.querySelector('midi-player');
-      const btn         = document.getElementById('randomMidi');
-
-      btn.addEventListener('click', async () => {
-        const filename = highlights[Math.floor(Math.random() * highlights.length)];
-        const url      = basePath + filename;
+      btn.addEventListener('click', () => {
+        const filename = tunes[Math.floor(Math.random() * tunes.length)];
+        const fullUrl  = basePath + filename;
 
         titleElem.textContent = filename;
 
-        const noteSeq = await core.urlToNoteSequence(url);
-
-        player.noteSequence = noteSeq;
-
-        player.play();
+        player.src = fullUrl;             
+        if (typeof player.stop === 'function') player.stop();
+        if (typeof player.play === 'function') player.play();
       });
     });
