@@ -152,32 +152,4 @@ document.documentElement.scrollTop = 0;
 
 
 
-               
-   
-    document.addEventListener('DOMContentLoaded', () => {
-      const tunes = [
-        'Canyon.mid',
-        'Town.mid',
-        'Trains.mid',
-        'Daisy.mid',
-        'Flourish.mid',
-        'OneStop.mid',
-        'Passport.mid'
-      ];
-      const basePath = '/tunes/highlights/';
-      const container = document.getElementById('midicontainer');
-      const titleElem = container.querySelector('h4');
-      const player = container.querySelector('midi-player');
-      const btn = document.getElementById('randommidi');
-
-      btn.addEventListener('click', () => {
-        const filename = tunes[Math.floor(Math.random() * tunes.length)];
-        const fullUrl  = basePath + filename;
-
-        titleElem.textContent = filename;
-
-        player.src = fullUrl;             
-        if (typeof player.stop === 'function') player.stop();
-        if (typeof player.play === 'function') player.play();
-      });
-    });
+        
