@@ -669,29 +669,6 @@ NAVIGATION STYLES
 */
 
 
-#toggler {
-  background: transparent;
-  border: none;
-  color:#00d95b;
-    text-shadow: 1px 1px 0 #1c4030, -1px 1px 0 #1c4030, -1px -1px 0 #1c4030, 1px -1px 0 #1c4030;
-  border-radius:5px;
-  font-size: 3rem;
-  line-height:3rem;
-  margin:0;
-  padding:0;
-  width:100%;
-  cursor: pointer;
-  display: none;
-  transition: transform 0.3s ease;
-}
-#toggler.active {
-  transform: rotate(90deg);
-  background:transparent;
-  color:#00d95b;
-
-}
-
-
 nav ul,
 nav li {
 	margin: 0;
@@ -829,7 +806,3 @@ img {
 
 
   
-  #toggler {
-    display: none;
-  }
-
