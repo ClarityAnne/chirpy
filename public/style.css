@@ -297,7 +297,7 @@ color:#dfbe05;
 @property --angle {
   syntax: '<angle>';
   inherits: true;
-  initial-value: -90deg;
+  initial-value: 90deg;
 }
 
 @keyframes progress {
@@ -307,7 +307,7 @@ color:#dfbe05;
   }
   
   2% {
-    --angle: -90deg;
+    --angle: 90deg;
   }
   
   100% {
