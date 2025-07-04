@@ -370,11 +370,11 @@ color:#dfbe05;
 .oOo.oOo.oOo.oOo.oOo.oOo.oOo.oOo. 
 */ 
 
-main ul, main ol {margin: auto;}
+main ul, main ol {margin: auto; width:100%}
 main ul {
   background-color:#00984a;
   padding:.3rem;
-  width:60%;
+  width:100%;
   margin:auto;
   border: 8px solid #00d95b;
 	list-style-type: none;
