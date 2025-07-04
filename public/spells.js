@@ -148,30 +148,3 @@ document.documentElement.scrollTop = 0;
 
 
 
-
-
-
-
- 
-  const tunes = [
-    'Canyon.MID',
-    'Town.MID',
-    'Trains.MID',
-    'Daisy.MID',
-    'Flourish.MID',
-    'OneStop.MID',
-    'Passport.MID'
-  ];
-
-  const player = document.querySelector('midi-player');
-  const title  = document.querySelector('#midicontainer h4');
-  const btn    = document.getElementById('next');
-  const base   = 'https://midiforest.neocities.org/tunes/highlights/';
-
-  btn.addEventListener('click', () => {
-    const file = tunes[Math.floor(Math.random() * tunes.length)];
-    title.textContent = file;
-    player.src = base + file;    
-    if (player.stop) player.stop();
-    player.play();
-  });
