@@ -149,11 +149,11 @@ midi-visualizer svg rect.note {
   stroke-width: 2;
 }
 midi-visualizer svg rect.note[data-instrument="0"]{
-  fill: #e22;
+  fill: #dfbe05;
   stroke: #500;
 }
 midi-visualizer svg rect.note[data-instrument="2"]{
-  fill: #2ee;
+  fill: #ffd;
   stroke: #055;
 }
 midi-visualizer svg rect.note[data-is-drum="true"]{
