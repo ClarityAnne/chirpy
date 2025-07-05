@@ -200,9 +200,8 @@ h3, h4 {
 h3, h4 {	text-shadow: 1px 1px 0 #1c4030, -1px 1px 0 #1c4030, -1px -1px 0 #1c4030, 1px -1px 0 #1c4030;
 color:#dfbe05; text-align:left;}
 
-h4 {font-size:1.6rem;}
 #midicontainer h4 {font-size: 1.8rem;}
-
+h4 {font-size:1.4rem;}
 
 h1 {
   width: 100%;
