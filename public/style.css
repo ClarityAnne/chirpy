@@ -427,12 +427,12 @@ img {width:100%; margin:.4rem auto;}
 .lantern { display:inline-start;padding:0; margin: .3em; margin-left:0; margin-top:0; float:left; width:12%;}
 
 
+.book { display:inline-start;padding:0; margin: .3em; margin-left:0; margin-top:0; float:left; width:12%;}
 
 .mage { display:inline-end;padding:0; margin: .3em; margin-left:0; margin-top:0; float:right; width:20%;}
 
 .lute { display:inline-end;padding:0; margin: .3em; margin-left:0; margin-top:0; float:right; width:20%;}
 
-.book { display:inline-end;padding:0 1em 0em 1em; margin: .3em; margin-left:0; margin-top:0; float:right; width:20%;}
 
 figure {
 	margin: .4rem auto;
