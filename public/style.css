@@ -426,7 +426,7 @@ img {width:100%; margin:.4rem auto;}
 
 .lantern { display:inline-start;padding:0; margin: .3em; margin-left:0; margin-top:0; float:left; width:12%;}
 
-.brave { display:block;padding:0; margin: .3em; margin-left:0; margin-top:0; float:left; width:20%;}
+.brave { display:block;padding:0; margin: .3em; margin-left:0; margin-top:0; float:right; width:40%;}
 
 .book { display:inline-start;padding:0; margin: .3em; margin-left:0; margin-top:0; float:left; width:20%;}
 
