@@ -21,7 +21,7 @@ font-size:1.1rem;
   overflow-wrap: break-word;
   word-wrap: break-word;
 
-background: #1e8a53 url(/img/ottawa.jpg) center center/cover no-repeat local;
+background: #1e8a53 url(/image/forestbg.jpg) center center/cover no-repeat local;
 opacity: 1;
 background-image: linear-gradient(to right, #00984a, #00984a 2px, #1e8a53 2px, #1e8a53 );
 background-size: 4px 100%;
