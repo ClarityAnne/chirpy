@@ -374,7 +374,7 @@ color:#dfbe05;
 .oOo.oOo.oOo.oOo.oOo.oOo.oOo.oOo. 
 */ 
 
-.changes ul li:before {
+#changes li:before {
 	content: "✔.";
 }
 
