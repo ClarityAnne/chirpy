@@ -276,6 +276,8 @@ footer p {text-align:center}
 
 a {
   text-decoration: none;
+
+text-shadow: 1px 1px 0 #1c4030, -1px 1px 0 #1c4030, -1px -1px 0 #1c4030, 1px -1px 0 #1c4030;
   color:#00d95b
 }
 
