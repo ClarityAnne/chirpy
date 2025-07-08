@@ -378,7 +378,8 @@ color:#dfbe05;
 	content: "✔.";
 }
 
-#changes span {color:#dfbe05;font-weight: bolder;}
+#changes span {color:#dfbe05;
+	text-shadow: 1px 1px 0 #1c4030, -1px 1px 0 #1c4030, -1px -1px 0 #1c4030, 1px -1px 0 #1c4030; font-weight: bolder;}
 
 
 main ul, main ol {margin: auto; display:block;width:100%}
