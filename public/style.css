@@ -378,6 +378,7 @@ color:#dfbe05;
 	content: "✔.";
 }
 
+#changes span {color:#dfbe05;font-weight: bolder;}
 
 
 main ul, main ol {margin: auto; display:block;width:100%}
