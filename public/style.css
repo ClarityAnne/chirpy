@@ -14,29 +14,19 @@ BASIC RESETS & GENERAL STYLES
 }
 
 body {
+
+
   font-family: "Nunito", sans-serif;
-  font-size: 1.1rem;
+font-size:1.1rem;
   overflow-wrap: break-word;
   word-wrap: break-word;
-  color: #d4ff90;
-background-image:
-    url("/image/forestbg.jpg"),
-    linear-gradient(
-      to right,
-      rgba(0, 152, 74, 0.5) 50%,
-      rgba(30, 138, 83, 0.5) 50%
-    );
-  background-size:
-    cover,       
-    4px 100%;    
-  background-repeat:
-    no-repeat,   
-    repeat;    
 
-  background-attachment:
-    fixed,
+background-color: #1e8a53;
+opacity: 1;
+background-image: linear-gradient(to right, #00984a, #00984a 2px, #1e8a53 2px, #1e8a53 );
+background-size: 4px 100%;
+  color: #d4ff90
 }
-
 
 #wrapper {
   display: flex;
