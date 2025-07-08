@@ -382,7 +382,7 @@ color:#dfbe05;
 
 main ul, main ol {margin: auto; display:block;width:100%}
 main ul {
-  padding:.3rem;
+  padding:.1em .3rem;
   margin:auto;
 
   border-left: 1.2rem solid #2b7344;
